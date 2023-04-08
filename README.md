@@ -1,0 +1,21 @@
+# dotfiles
+
+![Empty Screenshot](Pictures/20230408_11h50m34s_grim.png)
+![Screenshot With Easter Eggs](Pictures/20230408_11h51m54s_grim.png)
+
+Only works on Arch with Pipewire and NetworkManager.
+
+To install:
+
+```
+cd ~
+git init
+git remote add origin git@github.com:midnadimple/dotfiles
+git fetch
+git checkout -f master
+./install.sh
+```
+
+Logout and login.
+
+Licensed under [MIT](LICENSE)
