@@ -1,0 +1,85 @@
+{
+    "hybrid": {
+        "namespace": "hybrid-bar",
+        "r": 40,
+        "g": 44,
+        "b": 52,
+        "a": 0.8,
+        "features": ["tray_experimental", "hyprland", "systemd"]
+    },
+    "left-tray_tray": {},
+    "left-spacing_traytowin": {
+        "spacing_start": 0,
+        "spacing_end": 20
+    },
+    "left-label_window": {
+        "text": "Workspace ",
+        "command": "%hl_workspace%",
+        "update_rate": 100
+    },
+    "left-spacing_wintopower": {
+        "spacing_start": 0,
+        "spacing_end": 20
+    },
+    "left-button_powermenu": {
+        "text": " ",
+        "command": "wlogout",
+        "tooltip": "Click for logout menu"
+    },
+    "left-label_user": {
+        "text": "Logged in as ",
+        "command": "%username%",
+        "tooltip": "Shell: ",
+        "tooltip_command": "%shell%"
+    },
+    "centered-label_time": {
+        "text": "",
+        "command": "date +'%a %D %H:%M:%S'",
+        "anim_duration": 0,
+        "tooltip": "Epoch Time: ",
+        "tooltip_command": "date +%s"
+    },
+    "right-button_wifi": {
+        "text": "󰖩 ",
+        "command": "kitty --start-as fullscreen nmtui",
+        "tooltip": "Click to edit WiFi"
+    },
+    "right-label_wifiname": {
+        "text": "",
+        "command": "nmcli -t -f active,ssid dev wifi | grep -E '^yes' | cut -d\\: -f2",
+        "tooltip": "Hostname: ",
+        "tooltip_command": "%hostname%"
+    },
+    "right-spacing_wifitomem": {
+        "spacing_start": 0,
+        "spacing_end": 20
+    },
+    "right-button_mem": {
+        "text": "󰧑 ",
+        "command": "kitty --start-as fullscreen bashtop",
+        "tooltip": "Click for CPU and memory usage"
+    },
+    "right-label_usedmem": {
+        "text": "",
+        "command": "%used_mem%",
+        "anim_duration": 0
+    },
+    "right-label_totalmem": {
+        "text": "/",
+        "command": "%total_mem%"
+    },
+    "right-spacing_memtovolume": {
+        "spacing_start": 0,
+        "spacing_end": 20
+    },
+    "right-button_volumebutton": {
+        "text": "󰕾 ",
+        "command": "pavucontrol",
+        "tooltip": "Click for advanced volume control"
+    },
+    "right-label_volumelabel": {
+        "text": "",
+        "command": "echo $(pamixer --get-volume-human | sed 's/.*/\\u&/')"
+    }
+}
+
