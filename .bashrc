@@ -11,4 +11,4 @@ PS1='[\u@\h \W]\$ '
 
 QT_QPA_PLATFORMTHEME="qt6ct"
 EDITOR=helix
-
+PATH=PATH:~/.local/bin

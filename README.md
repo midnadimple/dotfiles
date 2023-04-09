@@ -18,4 +18,6 @@ git checkout -f master
 
 Logout and login.
 
+Any scripts you want to install, place in `.local/bin`
+
 Licensed under [MIT](LICENSE)
