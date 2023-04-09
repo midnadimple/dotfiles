@@ -41,7 +41,7 @@
     },
     "right-button_wifi": {
         "text": "󰖩 ",
-        "command": "kitty --start-as fullscreen nmtui",
+        "command": "kitty nmtui",
         "tooltip": "Click to edit WiFi"
     },
     "right-label_wifiname": {
@@ -56,7 +56,7 @@
     },
     "right-button_mem": {
         "text": "󰧑 ",
-        "command": "kitty --start-as fullscreen bashtop",
+        "command": "kitty bashtop",
         "tooltip": "Click for CPU and memory usage"
     },
     "right-label_usedmem": {
