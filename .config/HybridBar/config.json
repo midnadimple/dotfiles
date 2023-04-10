@@ -8,10 +8,6 @@
         "features": ["tray_experimental", "hyprland", "systemd"]
     },
     "left-tray_tray": {},
-    "left-spacing_traytowin": {
-        "spacing_start": 0,
-        "spacing_end": 20
-    },
     "left-label_window": {
         "text": "Workspace ",
         "command": "%hl_workspace%",
