@@ -52,9 +52,9 @@
     },
     "right-label_bat": {
         "text": ": ",
-        "command": "acpi -b | awk '{print $4}' | sed 's/,//'",
+        "command": "acpi -b | head -n 1 | awk '{print $4}' | sed 's/,//'",
         "tooltip": "Battery is ",
-        "tooltip_command": "acpi -b | awk '{print $3}' | sed 's/,//'"
+        "tooltip_command": "acpi -b | head -n 1 | awk '{print $3}' | sed 's/,//'"
     },
     "right-spacing_battomem": {
         "spacing_start": 0,
