@@ -14,6 +14,7 @@ git remote add origin git@github.com:midnadimple/dotfiles
 git fetch
 git checkout -f master
 ./install.sh
+touch ~/.config/hypr/custom.conf # needed for custom config and proper operation
 ```
 
 Logout and login.
