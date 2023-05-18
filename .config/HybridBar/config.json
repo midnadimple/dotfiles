@@ -35,21 +35,6 @@
         "tooltip": "Epoch Time: ",
         "tooltip_command": "date +%s"
     },
-    "right-button_wifi": {
-        "text": "󰖩 ",
-        "command": "kitty nmtui",
-        "tooltip": "Click to edit WiFi"
-    },
-    "right-label_wifiname": {
-        "text": "",
-        "command": "nmcli -t -f active,ssid dev wifi | grep -E '^yes' | cut -d\\: -f2",
-        "tooltip": "Hostname: ",
-        "tooltip_command": "%hostname%"
-    },
-    "right-spacing_wifitobat": {
-        "spacing_start": 0,
-        "spacing_end": 20
-    },
     "right-label_bat": {
         "text": ": ",
         "command": "acpi -b | head -n 1 | awk '{print $4}' | sed 's/,//'",
@@ -74,7 +59,15 @@
         "text": "/",
         "command": "%total_mem%"
     },
-    "right-spacing_memtovolume": {
+    "right-spacing_memtobrightness": {
+        "spacing_start": 0,
+        "spacing_end": 20
+    },
+    "right-label_brightness": {
+        "text": "󰃠 ",
+        "command": "pkexec /usr/bin/brillo"
+    },
+    "right-spacing_brightnesstovolume": {
         "spacing_start": 0,
         "spacing_end": 20
     },

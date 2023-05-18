@@ -7,7 +7,7 @@ which paru || (git clone https://aur.archlinux.org/paru.git && cd paru && makepk
 paru -Syu helix kitty qt6ct nwg-look-bin pamixer pavucontrol wlogout bashtop acpi \
   xdg-desktop-portal-hyprland-git polkit-kde-agent qt6-wayland ttf-dejavu ttf-dejavu-nerd \
   hyprland hybrid-bar wofi hyprpaper grim slurp cliphist udiskie swaylock swayidle libappindicator-gtk3 \
-  webcord-git-screenshare chromium steam wine gamescope wl-clipboard fzf zoxide joshuto sxiv
+  webcord-git-screenshare firefox steam wine gamescope wl-clipboard fzf zoxide joshuto sxiv brillo noto-fonts-emoji
 
 sudo usermod -aG seat $USER
 sudo echo $USER >> /etc/shutdown.allow
